@@ -1,0 +1,977 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96A18F772E19A908005F3FBE /* Score Tracker Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 96A18F762E19A908005F3FBE /* Score Tracker Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96A18F612E19A908005F3FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A18F482E19A907005F3FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A18F4F2E19A907005F3FBE;
+			remoteInfo = "Score Tracker";
+		};
+		96A18F6B2E19A908005F3FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A18F482E19A907005F3FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A18F4F2E19A907005F3FBE;
+			remoteInfo = "Score Tracker";
+		};
+		96A18F782E19A908005F3FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A18F482E19A907005F3FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A18F752E19A908005F3FBE;
+			remoteInfo = "Score Tracker Watch App";
+		};
+		96A18F892E19A909005F3FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A18F482E19A907005F3FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A18F752E19A908005F3FBE;
+			remoteInfo = "Score Tracker Watch App";
+		};
+		96A18F932E19A909005F3FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A18F482E19A907005F3FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A18F752E19A908005F3FBE;
+			remoteInfo = "Score Tracker Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96A18F9F2E19A909005F3FBE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				96A18F772E19A908005F3FBE /* Score Tracker Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		96A18F502E19A907005F3FBE /* Score Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Score Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A18F602E19A908005F3FBE /* Score TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Score TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A18F6A2E19A908005F3FBE /* Score TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Score TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A18F762E19A908005F3FBE /* Score Tracker Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Score Tracker Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A18F882E19A909005F3FBE /* Score Tracker Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Score Tracker Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A18F922E19A909005F3FBE /* Score Tracker Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Score Tracker Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9675D48B2E19DDCC00882514 /* Exceptions for "Score Tracker Watch App" folder in "Score Tracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Sports.swift,
+				Team.swift,
+				TrackerView.swift,
+			);
+			target = 96A18F4F2E19A907005F3FBE /* Score Tracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		96A18F522E19A907005F3FBE /* Score Tracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Score Tracker";
+			sourceTree = "<group>";
+		};
+		96A18F632E19A908005F3FBE /* Score TrackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Score TrackerTests";
+			sourceTree = "<group>";
+		};
+		96A18F6D2E19A908005F3FBE /* Score TrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Score TrackerUITests";
+			sourceTree = "<group>";
+		};
+		96A18F7A2E19A908005F3FBE /* Score Tracker Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9675D48B2E19DDCC00882514 /* Exceptions for "Score Tracker Watch App" folder in "Score Tracker" target */,
+			);
+			path = "Score Tracker Watch App";
+			sourceTree = "<group>";
+		};
+		96A18F8B2E19A909005F3FBE /* Score Tracker Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Score Tracker Watch AppTests";
+			sourceTree = "<group>";
+		};
+		96A18F952E19A909005F3FBE /* Score Tracker Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Score Tracker Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96A18F4D2E19A907005F3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F5D2E19A908005F3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F672E19A908005F3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F732E19A908005F3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F852E19A909005F3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F8F2E19A909005F3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96A18F472E19A907005F3FBE = {
+			isa = PBXGroup;
+			children = (
+				96A18F522E19A907005F3FBE /* Score Tracker */,
+				96A18F632E19A908005F3FBE /* Score TrackerTests */,
+				96A18F6D2E19A908005F3FBE /* Score TrackerUITests */,
+				96A18F7A2E19A908005F3FBE /* Score Tracker Watch App */,
+				96A18F8B2E19A909005F3FBE /* Score Tracker Watch AppTests */,
+				96A18F952E19A909005F3FBE /* Score Tracker Watch AppUITests */,
+				96A18F512E19A907005F3FBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96A18F512E19A907005F3FBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96A18F502E19A907005F3FBE /* Score Tracker.app */,
+				96A18F602E19A908005F3FBE /* Score TrackerTests.xctest */,
+				96A18F6A2E19A908005F3FBE /* Score TrackerUITests.xctest */,
+				96A18F762E19A908005F3FBE /* Score Tracker Watch App.app */,
+				96A18F882E19A909005F3FBE /* Score Tracker Watch AppTests.xctest */,
+				96A18F922E19A909005F3FBE /* Score Tracker Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96A18F4F2E19A907005F3FBE /* Score Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A18FA02E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score Tracker" */;
+			buildPhases = (
+				96A18F4C2E19A907005F3FBE /* Sources */,
+				96A18F4D2E19A907005F3FBE /* Frameworks */,
+				96A18F4E2E19A907005F3FBE /* Resources */,
+				96A18F9F2E19A909005F3FBE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A18F792E19A908005F3FBE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				96A18F522E19A907005F3FBE /* Score Tracker */,
+			);
+			name = "Score Tracker";
+			packageProductDependencies = (
+			);
+			productName = "Score Tracker";
+			productReference = 96A18F502E19A907005F3FBE /* Score Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96A18F5F2E19A908005F3FBE /* Score TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A18FA32E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score TrackerTests" */;
+			buildPhases = (
+				96A18F5C2E19A908005F3FBE /* Sources */,
+				96A18F5D2E19A908005F3FBE /* Frameworks */,
+				96A18F5E2E19A908005F3FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A18F622E19A908005F3FBE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				96A18F632E19A908005F3FBE /* Score TrackerTests */,
+			);
+			name = "Score TrackerTests";
+			packageProductDependencies = (
+			);
+			productName = "Score TrackerTests";
+			productReference = 96A18F602E19A908005F3FBE /* Score TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96A18F692E19A908005F3FBE /* Score TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A18FA62E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score TrackerUITests" */;
+			buildPhases = (
+				96A18F662E19A908005F3FBE /* Sources */,
+				96A18F672E19A908005F3FBE /* Frameworks */,
+				96A18F682E19A908005F3FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A18F6C2E19A908005F3FBE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				96A18F6D2E19A908005F3FBE /* Score TrackerUITests */,
+			);
+			name = "Score TrackerUITests";
+			packageProductDependencies = (
+			);
+			productName = "Score TrackerUITests";
+			productReference = 96A18F6A2E19A908005F3FBE /* Score TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		96A18F752E19A908005F3FBE /* Score Tracker Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A18F9C2E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score Tracker Watch App" */;
+			buildPhases = (
+				96A18F722E19A908005F3FBE /* Sources */,
+				96A18F732E19A908005F3FBE /* Frameworks */,
+				96A18F742E19A908005F3FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				96A18F7A2E19A908005F3FBE /* Score Tracker Watch App */,
+			);
+			name = "Score Tracker Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Score Tracker Watch App";
+			productReference = 96A18F762E19A908005F3FBE /* Score Tracker Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96A18F872E19A909005F3FBE /* Score Tracker Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A18FA92E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score Tracker Watch AppTests" */;
+			buildPhases = (
+				96A18F842E19A909005F3FBE /* Sources */,
+				96A18F852E19A909005F3FBE /* Frameworks */,
+				96A18F862E19A909005F3FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A18F8A2E19A909005F3FBE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				96A18F8B2E19A909005F3FBE /* Score Tracker Watch AppTests */,
+			);
+			name = "Score Tracker Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Score Tracker Watch AppTests";
+			productReference = 96A18F882E19A909005F3FBE /* Score Tracker Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96A18F912E19A909005F3FBE /* Score Tracker Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A18FAC2E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score Tracker Watch AppUITests" */;
+			buildPhases = (
+				96A18F8E2E19A909005F3FBE /* Sources */,
+				96A18F8F2E19A909005F3FBE /* Frameworks */,
+				96A18F902E19A909005F3FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A18F942E19A909005F3FBE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				96A18F952E19A909005F3FBE /* Score Tracker Watch AppUITests */,
+			);
+			name = "Score Tracker Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Score Tracker Watch AppUITests";
+			productReference = 96A18F922E19A909005F3FBE /* Score Tracker Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96A18F482E19A907005F3FBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					96A18F4F2E19A907005F3FBE = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					96A18F5F2E19A908005F3FBE = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 96A18F4F2E19A907005F3FBE;
+					};
+					96A18F692E19A908005F3FBE = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 96A18F4F2E19A907005F3FBE;
+					};
+					96A18F752E19A908005F3FBE = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					96A18F872E19A909005F3FBE = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 96A18F752E19A908005F3FBE;
+					};
+					96A18F912E19A909005F3FBE = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 96A18F752E19A908005F3FBE;
+					};
+				};
+			};
+			buildConfigurationList = 96A18F4B2E19A907005F3FBE /* Build configuration list for PBXProject "Score Tracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96A18F472E19A907005F3FBE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 96A18F512E19A907005F3FBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96A18F4F2E19A907005F3FBE /* Score Tracker */,
+				96A18F5F2E19A908005F3FBE /* Score TrackerTests */,
+				96A18F692E19A908005F3FBE /* Score TrackerUITests */,
+				96A18F752E19A908005F3FBE /* Score Tracker Watch App */,
+				96A18F872E19A909005F3FBE /* Score Tracker Watch AppTests */,
+				96A18F912E19A909005F3FBE /* Score Tracker Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96A18F4E2E19A907005F3FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F5E2E19A908005F3FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F682E19A908005F3FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F742E19A908005F3FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F862E19A909005F3FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F902E19A909005F3FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96A18F4C2E19A907005F3FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F5C2E19A908005F3FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F662E19A908005F3FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F722E19A908005F3FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F842E19A909005F3FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A18F8E2E19A909005F3FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96A18F622E19A908005F3FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A18F4F2E19A907005F3FBE /* Score Tracker */;
+			targetProxy = 96A18F612E19A908005F3FBE /* PBXContainerItemProxy */;
+		};
+		96A18F6C2E19A908005F3FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A18F4F2E19A907005F3FBE /* Score Tracker */;
+			targetProxy = 96A18F6B2E19A908005F3FBE /* PBXContainerItemProxy */;
+		};
+		96A18F792E19A908005F3FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A18F752E19A908005F3FBE /* Score Tracker Watch App */;
+			targetProxy = 96A18F782E19A908005F3FBE /* PBXContainerItemProxy */;
+		};
+		96A18F8A2E19A909005F3FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A18F752E19A908005F3FBE /* Score Tracker Watch App */;
+			targetProxy = 96A18F892E19A909005F3FBE /* PBXContainerItemProxy */;
+		};
+		96A18F942E19A909005F3FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A18F752E19A908005F3FBE /* Score Tracker Watch App */;
+			targetProxy = 96A18F932E19A909005F3FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		96A18F9A2E19A909005F3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96A18F9B2E19A909005F3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		96A18F9D2E19A909005F3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Score Tracker Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Score Tracker";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "seb.Score-Tracker";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-Tracker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		96A18F9E2E19A909005F3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Score Tracker Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Score Tracker";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "seb.Score-Tracker";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-Tracker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		96A18FA12E19A909005F3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Score Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Score Tracker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96A18FA22E19A909005F3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Score Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Score Tracker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96A18FA42E19A909005F3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Score Tracker";
+			};
+			name = Debug;
+		};
+		96A18FA52E19A909005F3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Score Tracker";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96A18FA72E19A909005F3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Score Tracker";
+			};
+			name = Debug;
+		};
+		96A18FA82E19A909005F3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Score Tracker";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96A18FAA2E19A909005F3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-Tracker-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score Tracker Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Score Tracker Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		96A18FAB2E19A909005F3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-Tracker-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score Tracker Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Score Tracker Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		96A18FAD2E19A909005F3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-Tracker-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Score Tracker Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		96A18FAE2E19A909005F3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "seb.Score-Tracker-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Score Tracker Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96A18F4B2E19A907005F3FBE /* Build configuration list for PBXProject "Score Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A18F9A2E19A909005F3FBE /* Debug */,
+				96A18F9B2E19A909005F3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A18F9C2E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score Tracker Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A18F9D2E19A909005F3FBE /* Debug */,
+				96A18F9E2E19A909005F3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A18FA02E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A18FA12E19A909005F3FBE /* Debug */,
+				96A18FA22E19A909005F3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A18FA32E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A18FA42E19A909005F3FBE /* Debug */,
+				96A18FA52E19A909005F3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A18FA62E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A18FA72E19A909005F3FBE /* Debug */,
+				96A18FA82E19A909005F3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A18FA92E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score Tracker Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A18FAA2E19A909005F3FBE /* Debug */,
+				96A18FAB2E19A909005F3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A18FAC2E19A909005F3FBE /* Build configuration list for PBXNativeTarget "Score Tracker Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A18FAD2E19A909005F3FBE /* Debug */,
+				96A18FAE2E19A909005F3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96A18F482E19A907005F3FBE /* Project object */;
+}
