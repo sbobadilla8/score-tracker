@@ -8,38 +8,79 @@
 import SwiftUI
 
 struct TrackerView: View {
-    @State var sport: SportName
+    var sport: SportName
     
-    @Bindable var SportObject: Sport
-    @Bindable var Teams: [Team]
+    @Bindable var sportObject: Sport
+    @Bindable var teamA: Team
+    @Bindable var teamB: Team
     
-    init() {
+    init(_ sport: SportName) {
+        self.teamA = Team()
+        self.teamB = Team()
+        
+        self.sport = sport
         switch sport {
         case .padel:
-            SportObject = Padel()
-            Teams = 
+            sportObject = Padel()
         case .pingpong:
-            SportObject = Pingpong()
+            sportObject = Pingpong()
         case .tennis:
-            SportObject = Tennis()
+            sportObject = Tennis()
         }
     }
     
     var body: some View {
         Text(String(describing: sport).capitalized).font(.headline)
-        HStack {
+        HStack() {
             VStack(alignment: .center) {
-                Text("We")
-                Text()
+                Text("\(teamA.currentScore)")
+                    .font(.system(size: 64, weight: .semibold))
+                    .monospacedDigit()
+                    .contentTransition(.numericText())
+                    .minimumScaleFactor(0.5)
+                    .padding()
+                    .frame(width: 64 * 1.25, height: 64)
+                    .background(RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.5)))
+                    .gesture(TapGesture(count: 2).onEnded {
+                            withAnimation {
+                                teamA.decreaseScore()
+                            }
+                        }.exclusively(before: TapGesture(count: 1).onEnded {
+                            withAnimation {
+                                teamA.increaseScore()
+                            }
+                        })
+                    )
             }
             Spacer()
             VStack {
-                Text("Them")
+                Text("\(teamB.currentScore)")
+                    .font(.system(size: 64, weight: .semibold))
+                    .monospacedDigit()
+                    .contentTransition(.numericText())
+                    .minimumScaleFactor(0.5)
+                    .padding()
+                    .frame(width: 64 * 1.25, height: 64 * 1)
+                    .background(RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.5)))
+                    .gesture(TapGesture(count: 2).onEnded {
+                            withAnimation {
+                                teamB.decreaseScore()
+                            }
+                        }.exclusively(before: TapGesture(count: 1).onEnded {
+                            withAnimation {
+                                teamB.increaseScore()
+                            }
+                        })
+                    )
             }
         }.padding()
     }
 }
 
 #Preview {
-    TrackerView(sport: SportName.padel)
+    @Previewable @State var sport = SportName.padel
+    @Previewable @State var sportObject: Sport = Padel()
+    @Previewable @State var teamA: Team = Team()
+    @Previewable @State var teamB: Team = Team()
+    TrackerView(sport)
 }

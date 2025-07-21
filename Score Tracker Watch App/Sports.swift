@@ -14,7 +14,7 @@ enum SportName: String, CaseIterable {
     case tennis
 }
 
-@Model
+@Observable
 class Sport {
     var playersPerTeam: Int
     var numberOfSets: Int
@@ -31,7 +31,6 @@ class Sport {
     }
 }
 
-@Model
 class Padel: Sport {
     init() {
         super.init(
@@ -44,7 +43,6 @@ class Padel: Sport {
     }
 }
 
-@Model
 class Pingpong: Sport {
     init() {
         super.init(
@@ -57,7 +55,7 @@ class Pingpong: Sport {
     }
 }
 
-@Model
+
 class Tennis: Sport {
     init() {
         super.init(

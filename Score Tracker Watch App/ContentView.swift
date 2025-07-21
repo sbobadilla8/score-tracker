@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
             }
             .navigationDestination(for: SportName.self) { sport in
-                TrackerView(sport: sport)
+                TrackerView(sport)
             }
             .navigationTitle("Sports Tracker")
         }

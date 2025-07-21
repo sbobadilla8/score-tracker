@@ -19,4 +19,25 @@ class Team {
         self.setsWon = setsWon
         self.gameWon = gameWon
     }
+    
+    func increaseScore() {
+        currentScore += 1
+    }
+    
+    func decreaseScore() {
+        if currentScore > 0 {
+            currentScore -= 1
+        }
+    }
+    
+    func resetScore() {
+        currentScore = 0
+    }
+    
+    static var mockTeams: [Team] {
+        [
+            Team(currentScore: 0, setsWon: 0, gameWon: false),
+            Team(currentScore: 0, setsWon: 0, gameWon: false),
+        ]
+    }
 }
