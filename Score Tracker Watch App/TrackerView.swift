@@ -14,6 +14,8 @@ struct TrackerView: View {
     @Bindable var teamA: Team
     @Bindable var teamB: Team
     
+    @State private var showMenu = false
+    
     init(_ sport: SportName) {
         self.teamA = Team()
         self.teamB = Team()
@@ -30,54 +32,85 @@ struct TrackerView: View {
     }
     
     var body: some View {
-        Text(String(describing: sport).capitalized).font(.headline)
-        HStack() {
-            VStack(alignment: .center) {
-                Text("\(teamA.currentScore)")
-                    .font(.system(size: 64, weight: .semibold))
-                    .monospacedDigit()
-                    .contentTransition(.numericText())
-                    .minimumScaleFactor(0.5)
-                    .padding()
-                    .frame(width: 64 * 1.25, height: 64)
-                    .background(RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.5)))
-                    .gesture(TapGesture(count: 2).onEnded {
-                            withAnimation {
-                                teamA.decreaseScore()
-                            }
-                        }.exclusively(before: TapGesture(count: 1).onEnded {
-                            withAnimation {
-                                teamA.increaseScore()
-                            }
-                        })
-                    )
+        NavigationStack {
+            Group {
+                Text(String(describing: sport).capitalized).font(.headline)
+                HStack() {
+                    Text("\(teamA.setsWon) - \(teamB.setsWon)")
+                }.padding()
+                HStack() {
+                    VStack(alignment: .center) {
+                        Text("\(sportObject.scoringScheme[teamA.currentScore])")
+                            .font(.system(size: 64, weight: .semibold))
+                            .monospacedDigit()
+                            .contentTransition(.numericText())
+                            .minimumScaleFactor(0.5)
+                            .padding()
+                            .frame(width: 64 * 1.25, height: 64)
+                            .background(RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.5)))
+                            .gesture(TapGesture(count: 2).onEnded {
+                                withAnimation {
+                                    teamA.decreaseScore()
+                                }
+                            }.exclusively(before: TapGesture(count: 1).onEnded {
+                                withAnimation {
+                                    if (teamA.currentScore < sportObject.pointsPerSet - 1) {
+                                        teamA.increaseScore()
+                                    } else {
+                                        teamA.increaseSetsWon()
+                                        teamA.resetScore()
+                                        teamB.resetScore()
+                                    }
+                                }
+                            })
+                            )
+                    }
+                    Spacer()
+                    VStack {
+                        Text("\(sportObject.scoringScheme[teamB.currentScore])")
+                            .font(.system(size: 64, weight: .semibold))
+                            .monospacedDigit()
+                            .contentTransition(.numericText())
+                            .minimumScaleFactor(0.5)
+                            .padding()
+                            .frame(width: 64 * 1.25, height: 64 * 1)
+                            .background(RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.5)))
+                            .gesture(TapGesture(count: 2).onEnded {
+                                withAnimation {
+                                    teamB.decreaseScore()
+                                }
+                            }.exclusively(before: TapGesture(count: 1).onEnded {
+                                withAnimation {
+                                    if (teamB.currentScore < sportObject.pointsPerSet - 1) {
+                                        teamB.increaseScore()
+                                    } else {
+                                        teamB.increaseSetsWon()
+                                        teamB.resetScore()
+                                        teamA.resetScore()
+                                    }
+                                }
+                            })
+                            )
+                    }
+                }.padding()
             }
-            Spacer()
-            VStack {
-                Text("\(teamB.currentScore)")
-                    .font(.system(size: 64, weight: .semibold))
-                    .monospacedDigit()
-                    .contentTransition(.numericText())
-                    .minimumScaleFactor(0.5)
-                    .padding()
-                    .frame(width: 64 * 1.25, height: 64 * 1)
-                    .background(RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.5)))
-                    .gesture(TapGesture(count: 2).onEnded {
-                            withAnimation {
-                                teamB.decreaseScore()
-                            }
-                        }.exclusively(before: TapGesture(count: 1).onEnded {
-                            withAnimation {
-                                teamB.increaseScore()
-                            }
-                        })
-                    )
+            .sheet(isPresented: $showMenu) {
+                OptionsListView(sportObject: sportObject)
             }
-        }.padding()
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing){
+                    Button {
+                        showMenu.toggle()
+                    } label: {
+                        Image(systemName: "list.bullet")
+                    }
+                }
+            }
+        }
     }
 }
 
-#Preview {
+#Preview() {
     @Previewable @State var sport = SportName.padel
     @Previewable @State var sportObject: Sport = Padel()
     @Previewable @State var teamA: Team = Team()

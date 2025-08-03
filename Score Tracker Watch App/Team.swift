@@ -34,6 +34,10 @@ class Team {
         currentScore = 0
     }
     
+    func increaseSetsWon() {
+        setsWon += 1
+    }
+    
     static var mockTeams: [Team] {
         [
             Team(currentScore: 0, setsWon: 0, gameWon: false),
