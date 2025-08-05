@@ -54,13 +54,7 @@ struct TrackerView: View {
                                 }
                             }.exclusively(before: TapGesture(count: 1).onEnded {
                                 withAnimation {
-                                    if (teamA.currentScore < sportObject.pointsPerSet - 1) {
-                                        teamA.increaseScore()
-                                    } else {
-                                        teamA.increaseSetsWon()
-                                        teamA.resetScore()
-                                        teamB.resetScore()
-                                    }
+                                    sportObject.handleScore(scoringTeam: teamA, otherTeam: teamB)
                                 }
                             })
                             )
@@ -81,13 +75,7 @@ struct TrackerView: View {
                                 }
                             }.exclusively(before: TapGesture(count: 1).onEnded {
                                 withAnimation {
-                                    if (teamB.currentScore < sportObject.pointsPerSet - 1) {
-                                        teamB.increaseScore()
-                                    } else {
-                                        teamB.increaseSetsWon()
-                                        teamB.resetScore()
-                                        teamA.resetScore()
-                                    }
+                                    sportObject.handleScore(scoringTeam: teamB, otherTeam: teamA)
                                 }
                             })
                             )
@@ -115,5 +103,7 @@ struct TrackerView: View {
     @Previewable @State var sportObject: Sport = Padel()
     @Previewable @State var teamA: Team = Team()
     @Previewable @State var teamB: Team = Team()
-    TrackerView(sport)
+    NavigationStack {
+        TrackerView(sport)
+    }
 }

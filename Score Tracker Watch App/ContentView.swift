@@ -8,19 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var path: [SportName] = []
     @State var scrollAmount = 0.0
     @State var scrolling: Bool = false
     
     var body: some View {
-        NavigationStack(path: $path){
-            List {
-                ForEach(SportName.allCases, id: \.self) { sport in
-                    NavigationLink(String(describing: sport).capitalized, value: sport)
+        NavigationStack {
+            ForEach(SportName.allCases, id: \.self) { sport in
+                NavigationLink(destination: TrackerView(sport)) {
+                    Text("\(sport)".capitalized)
                 }
-            }
-            .navigationDestination(for: SportName.self) { sport in
-                TrackerView(sport)
             }
             .navigationTitle("Sports Tracker")
         }

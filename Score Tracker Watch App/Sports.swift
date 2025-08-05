@@ -29,6 +29,8 @@ class Sport {
         self.scoringScheme = scoringScheme
         self.goldenPoint = goldenPoint
     }
+    
+    func handleScore(scoringTeam: Team, otherTeam: Team) {}
 }
 
 class Padel: Sport {
@@ -36,10 +38,36 @@ class Padel: Sport {
         super.init(
             playersPerTeam: 2,
             numberOfSets: 6,
-            pointsPerSet: 5,
+            pointsPerSet: 4,
             scoringScheme: [0, 15, 30, 40, 45],
             goldenPoint: false
         )
+    }
+    
+    override func handleScore(scoringTeam: Team, otherTeam: Team) {
+        if (scoringTeam.currentScore < pointsPerSet - 1) {
+            scoringTeam.increaseScore()
+        } else {
+            if (!goldenPoint) {
+                if (scoringTeam.currentScore == pointsPerSet - 1 && otherTeam.currentScore < pointsPerSet - 1) {
+                    scoringTeam.increaseSetsWon()
+                    scoringTeam.resetScore()
+                    otherTeam.resetScore()
+                } else if (scoringTeam.currentScore == pointsPerSet && otherTeam.currentScore == pointsPerSet - 1) {
+                    scoringTeam.increaseSetsWon()
+                    scoringTeam.resetScore()
+                    otherTeam.resetScore()
+                } else if (otherTeam.currentScore == pointsPerSet) {
+                    otherTeam.decreaseScore()
+                } else {
+                    scoringTeam.increaseScore()
+                }
+            } else {
+                scoringTeam.increaseSetsWon()
+                scoringTeam.resetScore()
+                otherTeam.resetScore()
+            }
+        }
     }
 }
 
