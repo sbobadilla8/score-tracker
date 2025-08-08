@@ -9,7 +9,8 @@ import SwiftUI
 
 struct OptionsListView: View {
     @Bindable var sportObject: Sport
-//    @Environment(\.dismiss) var dismiss
+    @Bindable var teamA: Team
+    @Bindable var teamB: Team
     
     var body: some View {
         NavigationStack {
@@ -20,22 +21,21 @@ struct OptionsListView: View {
                 default:
                     Text("No options")
                 }
+                Button("Reset") {
+                    teamA.resetScore()
+                    teamA.resetSetsWon()
+                    teamB.resetScore()
+                    teamB.resetSetsWon()
+                }
             }
             .padding()
-//            .toolbar {
-//                ToolbarItem(placement: .topBarTrailing){
-//                    Button {
-//                        dismiss()
-//                    } label: {
-//                        Image(systemName: "xmark.circle")
-//                    }
-//                }
-//            }
         }
     }
 }
 
 #Preview() {
     @Previewable @State var sportObject: Sport = Padel()
-    OptionsListView(sportObject: sportObject)
+    @Previewable @State var teamA: Team = Team()
+    @Previewable @State var teamB: Team = Team()
+    OptionsListView(sportObject: sportObject, teamA: teamA, teamB: teamB)
 }

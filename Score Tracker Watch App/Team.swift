@@ -38,6 +38,10 @@ class Team {
         setsWon += 1
     }
     
+    func resetSetsWon() {
+        setsWon = 0
+    }
+    
     static var mockTeams: [Team] {
         [
             Team(currentScore: 0, setsWon: 0, gameWon: false),

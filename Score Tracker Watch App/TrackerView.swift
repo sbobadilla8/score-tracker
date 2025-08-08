@@ -46,7 +46,7 @@ struct TrackerView: View {
                             .contentTransition(.numericText())
                             .minimumScaleFactor(0.5)
                             .padding()
-                            .frame(width: 64 * 1.25, height: 64)
+                            .frame(width: 56 * 1.25, height: 64)
                             .background(RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.5)))
                             .gesture(TapGesture(count: 2).onEnded {
                                 withAnimation {
@@ -67,7 +67,7 @@ struct TrackerView: View {
                             .contentTransition(.numericText())
                             .minimumScaleFactor(0.5)
                             .padding()
-                            .frame(width: 64 * 1.25, height: 64 * 1)
+                            .frame(width: 56 * 1.25, height: 64 * 1)
                             .background(RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.5)))
                             .gesture(TapGesture(count: 2).onEnded {
                                 withAnimation {
@@ -83,7 +83,7 @@ struct TrackerView: View {
                 }.padding()
             }
             .sheet(isPresented: $showMenu) {
-                OptionsListView(sportObject: sportObject)
+                OptionsListView(sportObject: sportObject, teamA: teamA, teamB: teamB)
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing){
@@ -101,6 +101,16 @@ struct TrackerView: View {
 #Preview() {
     @Previewable @State var sport = SportName.padel
     @Previewable @State var sportObject: Sport = Padel()
+    @Previewable @State var teamA: Team = Team()
+    @Previewable @State var teamB: Team = Team()
+    NavigationStack {
+        TrackerView(sport)
+    }
+}
+
+#Preview() {
+    @Previewable @State var sport = SportName.pingpong
+    @Previewable @State var sportObject: Sport = Pingpong()
     @Previewable @State var teamA: Team = Team()
     @Previewable @State var teamB: Team = Team()
     NavigationStack {

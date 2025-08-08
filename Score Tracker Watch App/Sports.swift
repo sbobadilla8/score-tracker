@@ -76,10 +76,20 @@ class Pingpong: Sport {
         super.init(
             playersPerTeam: 1,
             numberOfSets: 3,
-            pointsPerSet: 12,
-            scoringScheme: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+            pointsPerSet: 11,
+            scoringScheme: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
             goldenPoint: false
         )
+    }
+    
+    override func handleScore(scoringTeam: Team, otherTeam: Team) {
+        if (scoringTeam.currentScore >= pointsPerSet - 1 && otherTeam.currentScore <= scoringTeam.currentScore - 1) {
+            scoringTeam.increaseSetsWon()
+            scoringTeam.resetScore()
+            otherTeam.resetScore()
+        } else {
+            scoringTeam.increaseScore()
+        }
     }
 }
 
